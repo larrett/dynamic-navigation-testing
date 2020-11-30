@@ -11,7 +11,6 @@ import { MatButtonModule } from "@angular/material/button";
 
 import { AppComponent } from "./app.component";
 import { FlexLayoutModule } from "@angular/flex-layout";
-import { AppRoutingModule } from "./app-routing.module";
 import { NavService } from "./nav.service";
 import { TopNavComponent } from "./top-nav/top-nav.component";
 
@@ -25,13 +24,9 @@ import { TopNavComponent } from "./top-nav/top-nav.component";
     MatSidenavModule,
     MatToolbarModule,
     MatButtonModule,
-    FlexLayoutModule,
-    AppRoutingModule
+    FlexLayoutModule
   ],
-  declarations: [
-    AppComponent,
-    TopNavComponent
-  ],
+  declarations: [AppComponent, TopNavComponent],
   bootstrap: [AppComponent],
   providers: [NavService]
 })
